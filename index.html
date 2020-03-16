@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Cvičení z Programování 2 pro matematiky</title>
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <style>
+            .li_space {
+                margin-bottom: 0.3cm;
+            }
+        </style>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </head>
+    <body>
+        <main role="main" class="container">
+            <h1>Cvičení z Programování 2 pro matematiky </h1>
+            <p>
+                Kde? Karlov - Učebna M2<br>
+                Kdy? Uterý 17:20<br>
+                Kdo? Peter Kovács
+            </p>
+            <h3>Podmínky na zápočet</h3>
+                <p>
+                    Započet bude studentovi udělen pokud získá alespoň 15 bodů. Body je možné získat nasledovním způsobem:
+                    <ul>
+                        <li>Aktivitou na cvičení - max 1 bod za cvičení</li>
+                        <li>Odevzdáním domácího úkolu - max 4 body za úkol. Úkoly budou počas semestra minimálně 3.</li>
+                        <li>Napsáním písemky - max 10 bodů za písemku. Písmeky by měli být dvě. Pokud bude výuka zrušena delší čas, je možné že písemka bude pouze jedna na konci semestru</li>
+                        <li>V době zrušené distanční výuky budu na web uveřejňovat úkoly <b>na rozmyšlení</b>. Pokud sepíšete řešení můžete získat, až 2 body za jeden týden</li>
+                    </ul>
+                </p>
+                <p>Zadání domácích úkolů naleznete v recodexu. Do recodexu odevzdávejte soubor s řešením ve formátu pdf nebo txt. Po odevzdání vám recodex udělí 0 bodů, následně potom, co úkol opravím připíšu body, které jste za úkol získali.</p>
+
+            <hr />
+            <h3>Novinky</h3>
+            <p>Výuka je v důsledku COVID-19 přerušena. Na stránkách přednášky budou nadále zveřejňovány slidy. V nejbližších dnech se na stránce objeví, jakým způsobem budou probíhat cvičení.</p>
+            
+            <hr />
+            <h3>Obsah cvičení</h3>
+            <h4>1. cvičení - 18.2.2020</h4>
+            <p>Úvodní algoritmické cvičení. Hledali jsme nejefektivnejší algoritmus a snažili se spočítat kolik kroků musí vykonat. Ukazovali jsme si to na příkladu vážení kuliček, kde sme vždy vědeli porovnat váhu dvou koulí. Snažili jsme se najít nejtežší a druhou nejtežší. Řešeli jsme úkol s uvázáním ovce a stehovánim rodin.</p>
+
+            <hr />
+            <h4>2. cvičení - 25.2.2020</h4>
+            <p>
+                Asymptotická složitost. Z definice jsme ověřovali (tj. hledali jsme vhodné \(c\) a \(n_0\)):
+                <ul>
+                    <li>\(n^2 + n + 1 \in \Theta(n^2)\)</li>
+                    <li>\(log_e n^2 \in \Theta(log n)\)</li>
+                    <li>\(log_{10} n \in \Theta(log_2 n)\)</li>
+                    <li>Kam patří \(1/2\cdot log^2 n + 2\sqrt{n}\)</li>
+                    <li>\(6n^3 \notin O(n^2)\)</li>
+                    <li>\(2nlog(n) + 3\sqrt(n)+1 \in \Omega(n log n)\) </li>
+
+                </ul>
+                Odhadovali jsme složitost násobení matic, vypisování dělitelů čísla. Pro dlouhá čísla jsme asymptoticky odhadli porovnání, sčítání a násobení. Ukazovali jsme si jak spočítat složistost z pythonovského zdrojáku a jak se ukazuje, že algoritmu je konečný. Řekli jsme si něco málo o modelu RAM a o Turingovém stroji. Vyrobil jsme Turingův stroj, který rozpoznával, jestli je na pásce napsaný sudý počet jedniček.
+
+            </p>
+            <hr />
+            <h4>3. cvičení - 3.3.2020</h4>
+            <p>Vrámci opakování jsme dokázali: \(f\in\Theta(h) \land g\in\Theta(h) \implies f+g\in\Theta(h) \). Ukázali jsme jsi řídkou reprezentaci polynomu a operaci sčítaní na takto reprezentovaných polynomech. Dále jsme se věnovali binárnímu vyhledávaní. Aproximovali jsme pomocí binárního vyhledávaní odmocninu z daného čísla. Upravili jsme základní algoritmu tak, aby našel první/poslední hledaný prvek v poli. Dále sme si ukázali jak je možné dotazovat se v listu součet podřetězce v konstatním čase pomocí prefixových součtů.  Na konec jsme se vrátili k turingovým strojům. Vyrobili jsme turingův stroj, který rozpoznáva jestli je na pásce napsané slovo v tvaru 00...011...1 se stejným počtem jedniček a nul.</p>
+            <p><b>Domácí úkol (DEADLINE: 17.03.2020 do 17:19):</b> Turingův stroj - zrcadlení vstupu, kompletní zadání naleznete v Recodexu.</p>
+
+            <hr />
+            <h4>4. cvičení - 10.3.2020</h4>
+            <p>Z důvodu omezení výuky bylo cvičení zkráceno na poloviční délku. Třídení, zopakovali sme InsertSort, SelectSort, BubbleSort, MergeSort, RadixSort, BucketSort a CountingSort. Uvedli jsme si časovou složitost v nejhorším i nejlepším případu. V pseudokódu jsme si napsali iterativní verzi MergeSortu. Ukázali jsme si jak by sme mohli zrychlit InsertSort, za předpokladu že umíme posunou prvky v poli v konstatním čase. Ukázali jsme si krátce co je MatPlotLib. </p>
+            <h4>Na rozmyšlení: </h4>
+            <p><b>Nekonečné vyhledávaní (1 bod, DEADLINE: 24.3.2020):</b> Popište algoritmus, který v nekonečné posloupnosti \(x_1 < x_2 < \dots\)  najde pro zadané \(y\) pozici \(i\) takovou, že \(x_i \leq y < x_{i+1} \). Počet kroků hledání by neměl řádově přesáhnout \(log_2 i\).</p>
+
+            <hr />
+            <h4>5. cvičení - 17.3.2020</h4>
+            <p>Jednoduché datové struktury - Zásobník, Fronta, Halda, Prioritní fronta, Slovník. K pochopení <a href="https://ksvi.mff.cuni.cz/~topfer/ppt/A4.pdf">slidů z přednášky</a> doporučuju přečíst si něco o zákldaních datových strukturách ze skript <a href="http://pruvodce.ucw.cz/static/pruvodce.pdf">Průvodce labyrintem algoritmů</a> a to konkrétně strany 81-91. Po cvičení bude zveřejněny také probrané příklady </p>
+
+            <hr />
+            <h3>Odkazy</h3>
+            <p><a href="http://pruvodce.ucw.cz/static/pruvodce.pdf">Kniha Martina Mareše - Průvodce labyrintem algoritmů</a></p> 
+            <p><a href="https://ksvi.mff.cuni.cz/~topfer/">Stránka přednášky</a></p>
+            <p><a href="https://mj.ucw.cz/vyuka/1920/p2m/">Stránka k praktickému cvičení Martina Mareše</a> - užitečné odkazy, prezentace ke knihovnám, vzorové kódy</p>
+            
+
+        </main>
+    </body>
+</html>
