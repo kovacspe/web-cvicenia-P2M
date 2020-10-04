@@ -1,0 +1,1 @@
+scp -r * kovacs@ksvi.mff.cuni.cz:/home/kovacs/public_html/
